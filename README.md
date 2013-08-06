@@ -2,6 +2,10 @@
 
 CopySender is a solution to capture anything you copy (with CMD-C or Copy from the Edit menu) on your Mac and send it securely (basic auth over HTTPS preferably) to your own server. The purpose is to quickly transfer text to your other devices. The text is visible in a very simple auto-refreshing web page.
 
+Here's a video explaining what it does:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/udLx8XgnVYk" frameborder="0" allowfullscreen></iframe>
+
 ## Components ##
 
 * Mac OS X app that you keep running as long as you want CopySender enabled
