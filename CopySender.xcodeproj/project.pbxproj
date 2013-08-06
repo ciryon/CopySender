@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C6DFAF15900402E934804ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F29750522CD4D72AED50C0D /* libPods.a */; };
+		B12A83FE17AD1C2300CB5CE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A83FD17AD1C2300CB5CE2 /* Cocoa.framework */; };
+		B12A840817AD1C2300CB5CE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B12A840617AD1C2300CB5CE2 /* InfoPlist.strings */; };
+		B12A840A17AD1C2300CB5CE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B12A840917AD1C2300CB5CE2 /* main.m */; };
+		B12A840E17AD1C2300CB5CE2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B12A840C17AD1C2300CB5CE2 /* Credits.rtf */; };
+		B12A841117AD1C2300CB5CE2 /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B12A841017AD1C2300CB5CE2 /* CHAppDelegate.m */; };
+		B12A841417AD1C2400CB5CE2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12A841217AD1C2400CB5CE2 /* MainMenu.xib */; };
+		B12A841C17B1A25E00CB5CE2 /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = B12A841A17B1A25D00CB5CE2 /* icon_512x512.png */; };
+		B12A841D17B1A25E00CB5CE2 /* icon_512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B12A841B17B1A25D00CB5CE2 /* icon_512x512@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F29750522CD4D72AED50C0D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB012C3A6CE349308B2D8F9A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B12A83FA17AD1C2300CB5CE2 /* CopySender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopySender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12A83FD17AD1C2300CB5CE2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B12A840017AD1C2300CB5CE2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B12A840117AD1C2300CB5CE2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B12A840217AD1C2300CB5CE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B12A840517AD1C2300CB5CE2 /* CopySender-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CopySender-Info.plist"; sourceTree = "<group>"; };
+		B12A840717AD1C2300CB5CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B12A840917AD1C2300CB5CE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B12A840B17AD1C2300CB5CE2 /* CopySender-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopySender-Prefix.pch"; sourceTree = "<group>"; };
+		B12A840D17AD1C2300CB5CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B12A840F17AD1C2300CB5CE2 /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
+		B12A841017AD1C2300CB5CE2 /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		B12A841317AD1C2400CB5CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B12A841A17B1A25D00CB5CE2 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
+		B12A841B17B1A25D00CB5CE2 /* icon_512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_512x512@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B12A83F717AD1C2300CB5CE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12A83FE17AD1C2300CB5CE2 /* Cocoa.framework in Frameworks */,
+				6C6DFAF15900402E934804ED /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B12A83F117AD1C2300CB5CE2 = {
+			isa = PBXGroup;
+			children = (
+				B12A841A17B1A25D00CB5CE2 /* icon_512x512.png */,
+				B12A841B17B1A25D00CB5CE2 /* icon_512x512@2x.png */,
+				B12A840317AD1C2300CB5CE2 /* CopySender */,
+				B12A83FC17AD1C2300CB5CE2 /* Frameworks */,
+				B12A83FB17AD1C2300CB5CE2 /* Products */,
+				AB012C3A6CE349308B2D8F9A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B12A83FB17AD1C2300CB5CE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B12A83FA17AD1C2300CB5CE2 /* CopySender.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B12A83FC17AD1C2300CB5CE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12A83FD17AD1C2300CB5CE2 /* Cocoa.framework */,
+				B12A83FF17AD1C2300CB5CE2 /* Other Frameworks */,
+				0F29750522CD4D72AED50C0D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B12A83FF17AD1C2300CB5CE2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12A840017AD1C2300CB5CE2 /* AppKit.framework */,
+				B12A840117AD1C2300CB5CE2 /* CoreData.framework */,
+				B12A840217AD1C2300CB5CE2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B12A840317AD1C2300CB5CE2 /* CopySender */ = {
+			isa = PBXGroup;
+			children = (
+				B12A840F17AD1C2300CB5CE2 /* CHAppDelegate.h */,
+				B12A841017AD1C2300CB5CE2 /* CHAppDelegate.m */,
+				B12A841217AD1C2400CB5CE2 /* MainMenu.xib */,
+				B12A840417AD1C2300CB5CE2 /* Supporting Files */,
+			);
+			path = CopySender;
+			sourceTree = "<group>";
+		};
+		B12A840417AD1C2300CB5CE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B12A840517AD1C2300CB5CE2 /* CopySender-Info.plist */,
+				B12A840617AD1C2300CB5CE2 /* InfoPlist.strings */,
+				B12A840917AD1C2300CB5CE2 /* main.m */,
+				B12A840B17AD1C2300CB5CE2 /* CopySender-Prefix.pch */,
+				B12A840C17AD1C2300CB5CE2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B12A83F917AD1C2300CB5CE2 /* CopySender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12A841717AD1C2400CB5CE2 /* Build configuration list for PBXNativeTarget "CopySender" */;
+			buildPhases = (
+				9734B43467594E9A91EAB05C /* Check Pods Manifest.lock */,
+				B12A83F617AD1C2300CB5CE2 /* Sources */,
+				B12A83F717AD1C2300CB5CE2 /* Frameworks */,
+				B12A83F817AD1C2300CB5CE2 /* Resources */,
+				EF80E954899C4CA59B57F332 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopySender;
+			productName = CopySender;
+			productReference = B12A83FA17AD1C2300CB5CE2 /* CopySender.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B12A83F217AD1C2300CB5CE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Christian Hedin";
+			};
+			buildConfigurationList = B12A83F517AD1C2300CB5CE2 /* Build configuration list for PBXProject "CopySender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B12A83F117AD1C2300CB5CE2;
+			productRefGroup = B12A83FB17AD1C2300CB5CE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B12A83F917AD1C2300CB5CE2 /* CopySender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B12A83F817AD1C2300CB5CE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12A840817AD1C2300CB5CE2 /* InfoPlist.strings in Resources */,
+				B12A840E17AD1C2300CB5CE2 /* Credits.rtf in Resources */,
+				B12A841417AD1C2400CB5CE2 /* MainMenu.xib in Resources */,
+				B12A841C17B1A25E00CB5CE2 /* icon_512x512.png in Resources */,
+				B12A841D17B1A25E00CB5CE2 /* icon_512x512@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9734B43467594E9A91EAB05C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		EF80E954899C4CA59B57F332 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B12A83F617AD1C2300CB5CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12A840A17AD1C2300CB5CE2 /* main.m in Sources */,
+				B12A841117AD1C2300CB5CE2 /* CHAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B12A840617AD1C2300CB5CE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12A840717AD1C2300CB5CE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B12A840C17AD1C2300CB5CE2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12A840D17AD1C2300CB5CE2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B12A841217AD1C2400CB5CE2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12A841317AD1C2400CB5CE2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B12A841517AD1C2400CB5CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B12A841617AD1C2400CB5CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B12A841817AD1C2400CB5CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB012C3A6CE349308B2D8F9A /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CopySender/CopySender-Prefix.pch";
+				INFOPLIST_FILE = "CopySender/CopySender-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B12A841917AD1C2400CB5CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB012C3A6CE349308B2D8F9A /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CopySender/CopySender-Prefix.pch";
+				INFOPLIST_FILE = "CopySender/CopySender-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B12A83F517AD1C2300CB5CE2 /* Build configuration list for PBXProject "CopySender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12A841517AD1C2400CB5CE2 /* Debug */,
+				B12A841617AD1C2400CB5CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12A841717AD1C2400CB5CE2 /* Build configuration list for PBXNativeTarget "CopySender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12A841817AD1C2400CB5CE2 /* Debug */,
+				B12A841917AD1C2400CB5CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B12A83F217AD1C2300CB5CE2 /* Project object */;
+}
