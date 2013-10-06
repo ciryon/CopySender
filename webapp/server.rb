@@ -10,8 +10,17 @@ use Rack::Auth::Basic, "Restricted Area" do |username, password|
     username == settings.username and password == settings.password
 end
 
+def tweak_content content
+  if content.match(/^\S+:\/\//)
+    return "<a href=\"#{content}\">#{content}</a>"
+  else
+    return content
+  end
+
+end
+
 get "/" do
-  erb :index, :locals => {:clipboard_string => get_clipboard, :refresh_rate => settings.refresh_rate_in_seconds.to_i * 1000}
+  erb :index, :locals => {:clipboard_string => tweak_content(get_clipboard), :refresh_rate => settings.refresh_rate_in_seconds.to_i * 1000}
 end
 
 post "/" do
@@ -20,6 +29,7 @@ post "/" do
   write_clipboard decoded_contents
   "OK"
 end
+
 
 
 

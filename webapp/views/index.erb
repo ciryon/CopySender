@@ -1,19 +1,31 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+  <meta name="viewport" content = "width = device-width, initial-scale = 1.0 user-scalable = no" />  
   <title>Clipboard</title>
- <script type="text/javascript">
-var timeout = setTimeout("location.reload(true);",<%=refresh_rate %>);
+  <style>
+    #clipboard {
+      font-size:21.0px;
+    }
+
+  </style>
+  <script type="text/javascript">
+  var timeout = setTimeout("location.reload(true);",<%=refresh_rate %>);
   function resetTimeout() {
     clearTimeout(timeout);
     timeout = setTimeout("location.reload(true);",<%=refresh_rate %>);
+ } 
+
+  function selectText(element) {
+    var text = document.getElementById(element);
+    var selection = window.getSelection();
+    selection.setBaseAndExtent(text, 0, text, 1);
   }
-</script>
+  </script>
 </head>
-<body>
+<body onLoad="script:selectText('clipboard')">
   <div>
-    <p>
+    <p id="clipboard">
     <%=clipboard_string %>
     </p>
   </div>
