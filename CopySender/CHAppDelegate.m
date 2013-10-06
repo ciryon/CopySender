@@ -17,6 +17,7 @@
 @property (weak) IBOutlet NSButton *bottomButton;
 @property (strong) NSTimer* timer;
 @property (assign) BOOL  isRunning;
+@property (strong) NSStatusItem *statusMenuItem;
 @end
 
 @implementation CHAppDelegate
@@ -25,6 +26,7 @@
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+  [self setupStatusItem];
   [self readFromSettings];
   
   if ([self settingsValidate]) {
@@ -35,6 +37,7 @@
   }
   
   if ([self settingsValidate]) {
+    [self.window setIsVisible:NO];
     [self startRunning];
 
   }
@@ -43,6 +46,32 @@
   }
 }
 
+
+-(void)setupStatusItem;
+{
+  
+  NSStatusItem *statusItem = [[NSStatusBar systemStatusBar]
+                 statusItemWithLength:NSVariableStatusItemLength]
+                ;
+  [statusItem setHighlightMode:YES];
+  [statusItem setTitle:@"CS"];
+  [statusItem setEnabled:YES];
+  [statusItem setToolTip:@"Toggle the main window"];
+  
+  [statusItem setAction:@selector(toggleMainWindow:)];
+  [statusItem setTarget:self];
+  self.statusMenuItem = statusItem;
+}
+
+
+-(void)toggleMainWindow:(id)sender;
+{
+  if ([self.window isVisible]) {
+    [self.window setIsVisible:NO];
+  }
+  else
+    [self.window setIsVisible:YES];
+}
 
 -(void)updateButtonTo:(NSString*)text;
 {
